@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wu-Tang Gif Search</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	    
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+
+	<div id="fullsiteContainer" class = "container">
+		<div class="jumbotron">
+		  <h1>Wu-Tang Gif Search</h1>
+		  <p>Click on the button for your favorite Wu-Tank member to load 10 gifs.  If you click on a Gif, it will animate.</p>
+		</div>
+
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id ="sidebar">
+
+			<form action="" method="POST" role="form">
+				<!-- <legend>Search for a GIF here!</legend> -->
+			
+				<div class="gif-form">
+					<label for="">Add New Search</label>
+					<input type="text" class="form-control" id="gif-input" placeholder="Enter Text"> 
+				</div>
+		
+				<button type="submit" class="btn btn-primary" id = "searchButton">Submit</button>
+
+				<p></p>
+
+				<div id="buttonsView"></div>
+			</form>
+			
+		</div>
+
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id ="maincontent">
+
+			<div id="gifView"></div>
+		</div>
+
+	</div>
+
+</body>
+</html>
